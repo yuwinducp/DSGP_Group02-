@@ -1,0 +1,28 @@
+.banner2 {
+    height: 90vh;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .banner2__title {
+    text-align: center;
+    font-weight: 60;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .banner2__title_tail {
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+ 
