@@ -4,7 +4,8 @@ import Home from "./components/Home";
 import CropRecommender from "./components/CropRecommender";
 import FertilizerRecommender from "./components/FertilizerRecommender";
 import NavBar from "./components/NavBar";
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+import SigIn from "./components/SignIn";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route exact path="/crop" component={CropRecommender} />
 
           <Route exact path="/fertilizer" component={FertilizerRecommender} />
+
+          <Route exact path="/sign" component={SigIn} />
           
         </Switch>
         <Footer />
