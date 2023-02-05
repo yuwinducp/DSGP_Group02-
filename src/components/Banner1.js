@@ -8,7 +8,10 @@ const images = [
     "assets/B4.jpg",
     "assets/B3.jpg",
     "assets/B6.jpg",
-    "assets/B7.jpg"
+    "assets/B7.jpg",
+    "assets/B8.jpg",
+    "assets/B9.jpg",
+    "assets/B10.jpg"
   ];
 
 const Banner = () => {
