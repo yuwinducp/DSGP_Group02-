@@ -58,19 +58,29 @@ function Footer() {
             <i class='fab fa-linkedin' />
           </Link>
         </div>
-
+      </section>
+      <section>
         <div class='footer-links'>
           <div class='footer-link-items'>
             <h2>Contact Info</h2>
-            <div className='email'>#yuwindu.20210918@iit.ac.lk</div>
-            <div className='telNo'>%011 000 0000</div>
-            <div className='address'>&Colombo, SL.</div>
+            <div>
+              <i class="fas fa-envelope"></i>
+              <span class="email">&nbsp;&nbsp;info@agromatics.com</span>
+            </div>
+            <div>
+              <i class="fas fa-phone"></i>
+              <span class="telNo">&nbsp;&nbsp;+94 123 456 7890</span>
+            </div>
+            <div>
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="address">&nbsp;&nbsp;123 Main Street, Anytown SL</span>
+            </div>
+            <br></br>
             <Link to='/'>Talk To Us</Link>
           </div> 
         </div>
-
-        <small class='website-rights'>AGROMATICS © 2022</small>
       </section>
+      <small class='website-rights'>AGROMATICS © 2022</small>
     </div>
   );
 }
