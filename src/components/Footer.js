@@ -80,7 +80,7 @@ function Footer() {
           </div> 
         </div>
       </section>
-      <small class='website-rights'>AGROMATICS © 2022</small>
+      <small class='website-rights'>AGROMATICS © 2023</small>
     </div>
   );
 }

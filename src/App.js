@@ -4,8 +4,10 @@ import Home from "./components/Home";
 import CropRecommender from "./components/CropRecommender";
 import FertilizerRecommender from "./components/FertilizerRecommender";
 import NavBar from "./components/NavBar";
-import Footer from './components/Footer';
-import SigIn from "./components/SignIn";
+import Footer from "./components/Footer";
+import SignIn from "./components/SignIn";
+// import WhatWeDo from "./components/WhatWeDo";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   return (
@@ -20,7 +22,11 @@ function App() {
 
           <Route exact path="/fertilizer" component={FertilizerRecommender} />
 
-          <Route exact path="/sign" component={SigIn} />
+          <Route exact path="/sign" component={SignIn} />
+
+          {/* <Route exact path="/whatwedo" component={WhatWeDo} /> */}
+
+          <Route exact path="/aboutus" component={AboutUs} />
           
         </Switch>
         <Footer />
