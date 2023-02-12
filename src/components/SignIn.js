@@ -6,6 +6,7 @@ function SigIn() {
     const [signIn, toggle] = React.useState(true);
      return(
         <div style={{backgroundImage:`url(${process.env.PUBLIC_URL + 'assets/B7.jpg'})`}} className="SignInContainer">
+        <section><h1 style={{opacity: '0'}}>What We Do Page</h1></section>
          <Components.Container>
              <Components.SignUpContainer signinIn={signIn}>
                  <Components.Form>
@@ -54,6 +55,7 @@ function SigIn() {
              </Components.OverlayContainer>
 
          </Components.Container>
+         <section><h1 style={{opacity: '0'}}>What We Do Page</h1></section>
          </div>
      )
 }

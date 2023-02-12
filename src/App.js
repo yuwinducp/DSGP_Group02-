@@ -6,7 +6,7 @@ import FertilizerRecommender from "./components/FertilizerRecommender";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import SignIn from "./components/SignIn";
-// import WhatWeDo from "./components/WhatWeDo";
+import WhatWeDo from "./components/WhatWeDo";
 import AboutUs from "./components/AboutUs";
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
 
           <Route exact path="/sign" component={SignIn} />
 
-          {/* <Route exact path="/whatwedo" component={WhatWeDo} /> */}
+          <Route exact path="/whatwedo" component={WhatWeDo} />
 
           <Route exact path="/aboutus" component={AboutUs} />
           

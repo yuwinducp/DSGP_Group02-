@@ -1,0 +1,104 @@
+.whatwedocontainer {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.whatwedo_title {
+  padding-top: 5px;
+  font-weight: 80;
+  font-size: 16px;
+  color: #272727;
+  display: inline-flex;
+  gap: 10px;
+}
+
+.whatwedo_title_fp {
+  padding-top: 5px;
+  font-weight: 80;
+  font-size: 16px;
+  color: #272727;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: right !important;
+  align-content: center;
+  text-align: right !important;
+}
+
+.whatwedo_tale {
+  padding-top: 5px;
+  font-weight: 60;
+  font-size: 16px;
+  color: #272727;
+}
+
+.container_crop {
+  display: flex;
+  border-radius: 12px;
+  padding: 30px;
+  padding-left: 56px !important;
+  scroll-snap-type: x mandatory;
+  opacity: 0.7;
+  width: 90% !important;
+  height: 200px;
+  flex: 0 0 100%;
+  flex-direction: column;
+  padding: 30px;
+  background: #fff;
+  scroll-snap-align: start;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  margin-bottom: 2% !important;
+  justify-content: left !important;
+  align-content: center;
+  text-align: left !important;
+}
+
+.container_fertilizer {
+  display: flex;
+  border-radius: 12px;
+  padding: 30px;
+  padding-left: 56px !important;
+  scroll-snap-type: x mandatory;
+  opacity: 0.7;
+  width: 90% !important;
+  height: 200px;
+  flex: 0 0 100%;
+  flex-direction: column;
+  padding: 30px;
+  background: #fff;
+  scroll-snap-align: start;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  margin-bottom: 2% !important;
+  justify-content: right !important;
+  align-content: center;
+  text-align: right !important;
+}
+
+.container_advice {
+  display: flex;
+  border-radius: 12px;
+  padding: 30px;
+  padding-left: 56px !important;
+  scroll-snap-type: x mandatory;
+  opacity: 0.7;
+  width: 90% !important;
+  height: 200px;
+  flex: 0 0 100%;
+  flex-direction: column;
+  padding: 30px;
+  background: #fff;
+  scroll-snap-align: start;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  justify-content: left !important;
+  align-content: center;
+  text-align: left !important;
+}
+
+.wwd_card__icon {
+  width: 50px;
+  height: 50px;
+}
