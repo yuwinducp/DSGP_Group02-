@@ -76,6 +76,7 @@ export const Button = styled.button`
    padding: 12px 45px;
    letter-spacing: 1px;
    text-transform: uppercase;
+   cursor: pointer;
    transition: transform 80ms ease-in;
    &:active{
        transform: scale(0.95);

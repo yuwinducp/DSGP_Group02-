@@ -51,6 +51,8 @@
   justify-content: left !important;
   align-content: center;
   text-align: left !important;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
 }
 
 .container_fertilizer {
@@ -74,6 +76,8 @@
   justify-content: right !important;
   align-content: center;
   text-align: right !important;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
 }
 
 .container_advice {
@@ -96,6 +100,18 @@
   justify-content: left !important;
   align-content: center;
   text-align: left !important;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.container_crop:hover {
+  transform: scale(0.98);
+}
+.container_fertilizer:hover {
+  transform: scale(0.98);
+}
+.container_advice:hover {
+  transform: scale(0.98);
 }
 
 .wwd_card__icon {

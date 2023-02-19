@@ -87,6 +87,13 @@
 .social-icon-link {
   color: #fff;
   font-size: 24px;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  cursor: pointer;
+}
+
+.social-icon-link:hover {
+  transform: scale(0.90);
 }
 
 
@@ -111,6 +118,12 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.footer-logo:hover {
+  transform: scale(0.98);
 }
 
 .footer-logo font {

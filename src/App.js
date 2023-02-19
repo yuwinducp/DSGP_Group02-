@@ -9,6 +9,7 @@ import SignIn from "./components/SignIn";
 import WhatWeDo from "./components/WhatWeDo";
 import AboutUs from "./components/AboutUs";
 import TalkToUs from "./components/TalkToUs";
+import Advice from "./components/AgriAdvice";
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
           <Route exact path="/aboutus" component={AboutUs} />
 
           <Route exact path="/talktous" component={TalkToUs} />
+
+          <Route exact path="/advice" component={Advice} />
           
         </Switch>
         <Footer />
