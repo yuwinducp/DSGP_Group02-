@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import SignIn from "./components/SignIn";
 import WhatWeDo from "./components/WhatWeDo";
 import AboutUs from "./components/AboutUs";
+import TalkToUs from "./components/TalkToUs";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
           <Route exact path="/whatwedo" component={WhatWeDo} />
 
           <Route exact path="/aboutus" component={AboutUs} />
+
+          <Route exact path="/talktous" component={TalkToUs} />
           
         </Switch>
         <Footer />

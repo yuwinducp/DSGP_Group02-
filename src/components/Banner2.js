@@ -30,7 +30,7 @@ function Banner2() {
                 </p>
             </section>
 
-            <div className="banner2__title"><h2>Our Servises</h2></div>
+            <div className="banner2__title"><h2>Our Services</h2></div>
             <section class="container_button">
                 <div class="card">
                     <img src='assets/cropicon.png' alt="Crop Icon" className="card__icon"/>
@@ -38,7 +38,7 @@ function Banner2() {
                 </div>
                 <div class="card">
                     <img src='assets/fertilizericon.png' alt="Fertilizer Icon" className="card__icon"/>
-                    <Button onClick={fertRedirect} className="banner3__button fertilizerButton">Fertilizer Recommenderr</Button>
+                    <Button onClick={fertRedirect} className="banner3__button fertilizerButton">Fertilizer Recommender</Button>
                 </div>
                 <div class="card">
                     <img src='assets/adviceicon.png' alt="Advice Icon" className="card__icon"/>

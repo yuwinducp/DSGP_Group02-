@@ -76,7 +76,7 @@ function Footer() {
               <span class="address">&nbsp;&nbsp;123 Main Street, Anytown SL</span>
             </div>
             <br></br>
-            <Link to='/'>Talk To Us</Link>
+            <Link to='/talktous'>Talk To Us</Link>
           </div> 
         </div>
       </section>
