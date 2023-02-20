@@ -11,7 +11,7 @@ const Contact = () => {
             <h2>Talk To Us</h2>
           </div>
 
-          <div className='container'>
+          <div className='talk-container'>
             <div className='row'>
               <div className='column'>
                 <div className='contact-widget'>

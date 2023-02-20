@@ -12,10 +12,6 @@ export const MenuList = [
       url: "/sign",
     },
     {
-      title: "News and Updates",
-      url: "/news",
-    },
-    {
       title: "What We Do",
       url: "/whatwedo",
     },

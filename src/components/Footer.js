@@ -63,17 +63,17 @@ function Footer() {
         <div class='footer-links'>
           <div class='footer-link-items'>
             <h2>Contact Info</h2>
-            <div>
+            <div class="email">
               <i class="fas fa-envelope"></i>
-              <span class="email">&nbsp;&nbsp;info@agromatics.com</span>
+              <span>&nbsp;&nbsp;info@agromatics.com</span>
             </div>
-            <div>
+            <div class="telNo">
               <i class="fas fa-phone"></i>
-              <span class="telNo">&nbsp;&nbsp;+94 123 456 7890</span>
+              <span>&nbsp;&nbsp;+94 123 456 7890</span>
             </div>
-            <div>
+            <div class="address">
               <i class="fas fa-map-marker-alt"></i>
-              <span class="address">&nbsp;&nbsp;123 Main Street, Anytown SL</span>
+              <span>&nbsp;&nbsp;123 Main Street, Anytown SL</span>
             </div>
             <br></br>
             <Link to='/talktous'>Talk To Us</Link>

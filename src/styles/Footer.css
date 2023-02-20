@@ -2,7 +2,7 @@
   background-color: #242424;
   display: flex;
   flex-direction: column;
-  height: 65%;
+  height: 67%;
 }
 
 
@@ -52,14 +52,35 @@
 
 .email {
   margin-bottom: 16px;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
 }
 
 .telNo {
   margin-bottom: 16px;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
 }
 
 .address {
   margin-bottom: 16px;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.email:hover {
+  transform: scale(0.90);
+  color: #077329;
+}
+
+.telNo:hover {
+  transform: scale(0.90);
+  color: #077329;
+}
+
+.address:hover {
+  transform: scale(0.90);
+  color: #077329;
 }
 
 .footer-link-items > div {
@@ -94,6 +115,7 @@
 
 .social-icon-link:hover {
   transform: scale(0.90);
+  color: rgb(11, 143, 8);
 }
 
 
