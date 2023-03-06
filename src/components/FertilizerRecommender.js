@@ -4,6 +4,40 @@ import api from "../api/recommenderapi"
 import Alert from '@material-ui/lab/Alert';
 import "../styles/croprecommenderoutput.css"
 
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Typography from '@material-ui/core/Typography';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
+import "../styles/croprecommenderoutput.css"
+import {fertilizerData} from "./Data"
+import Loading from './Loading';
+
+const useStyles = makeStyles((theme) => ({
+    formControl: {
+      margin: theme.spacing(1),
+      width: "280px",
+      backgroundColor: "whitesmoke",
+    },
+    selectEmpty: {
+      marginTop: theme.spacing(2),
+    },
+    root: {
+        maxWidth: 550,
+    },
+    table: {
+        minWidth: 450,
+    },
+}));
+
 function FertilizerRecommender() {
     const [formData, setFormData] = useState({
         Temparature:"",
@@ -20,6 +54,7 @@ function FertilizerRecommender() {
 
     const [loadingStatus, setLoadingStatus] = useState(false)
     
+    const classes = useStyles();
 
     const formRenderData = [
         {
@@ -81,9 +116,78 @@ function FertilizerRecommender() {
         setLoadingStatus(false)
     }
 
+    const handleBackClick = () => {
+        setPredictionData({})
+    }
+
+    const predictedFertilizer = fertilizerData[predictionData.final_prediction]
+
+    if (predictionData.final_prediction) {
+
+        const outputComponent = (
+
+
+            <div className="output_container">
+                <Card className={`${classes.root} output_container__card`}>
+                    {/* <CardActionArea> */}
+                        <CardMedia
+                        component="img"
+                        alt={predictedFertilizer.title}
+                        height="225"
+                        image={predictedFertilizer.imageUrl}
+                        title={predictedFertilizer.title}
+                        />
+                        <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            <b>Prediction: </b>{predictedFertilizer.title}
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                            {predictedFertilizer.description}
+                        </Typography>
+                        <br/>
     
-    return (
-        <div style={{backgroundImage:`url(${process.env.PUBLIC_URL + 'assets/FertilizerRecomender.jpg'})`}} className="container">
+                        <TableContainer component={Paper}>
+                            <Table className={classes.table} aria-label="simple table">
+                                <TableHead>
+                                <TableRow>
+                                    <TableCell component="th" align="center"><b>XGBoost Model Prediction</b></TableCell>
+                                    <TableCell component="th" align="center"><b>RandomForest Model Prediction</b></TableCell>
+                                    <TableCell component="th" align="center"><b>SVM Model Prediction</b></TableCell>
+                                </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    <TableRow>
+                                        <TableCell align="center">{predictionData.xgb_model_prediction} ({predictionData.xgb_model_probability}%)</TableCell>
+                                        <TableCell align="center">{predictionData.rf_model_prediction} ({predictionData.rf_model_probability}%)</TableCell>
+                                        <TableCell align="center">{predictionData.svm_model_prediction} ({predictionData.svm_model_probability}%)</TableCell>
+                                    </TableRow>
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
+    
+                        </CardContent>
+                    {/* </CardActionArea> */}
+                    <CardActions>
+                        <Button onClick={()=>handleBackClick()} className="back__button" variant="contained" size="small" color="primary">
+                        Back to Prediction
+                        </Button>
+                    </CardActions>
+                </Card>
+            </div>
+        )
+
+        return outputComponent
+
+
+    }
+
+    else if(loadingStatus) {
+        return <Loading />
+    }
+
+
+    else return (
+        <div style={{backgroundImage:`url(${process.env.PUBLIC_URL + 'assets/FertilizerRecomender.jpg'})`, height:'101%'}} className="container">
             <div className="form">
                 <div className="form__form_group">
 
@@ -157,7 +261,7 @@ function FertilizerRecommender() {
                         ))}
                     </TextField>
 
-                    <Button onClick={()=>handleClick()} className="form__button" color="primary" variant="contained">Predict Fertilizer</Button>
+                    <Button onClick={()=>handleClick()} className="form__button" style={{backgroundColor: '#077329'}} variant="contained">Predict Fertilizer</Button>
                 </div>
             </div>
         </div>

@@ -23,7 +23,7 @@ function AboutUs() {
                     <div class="icon">
                         <FaUsers size={64} />
                     </div>
-                    <h2>Vission</h2>
+                    <h2>Vision</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
                 </div>
                 <div class="card">
