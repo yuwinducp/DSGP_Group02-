@@ -150,16 +150,12 @@ function FertilizerRecommender() {
                             <Table className={classes.table} aria-label="simple table">
                                 <TableHead>
                                 <TableRow>
-                                    <TableCell component="th" align="center"><b>XGBoost Model Prediction</b></TableCell>
-                                    <TableCell component="th" align="center"><b>RandomForest Model Prediction</b></TableCell>
-                                    <TableCell component="th" align="center"><b>SVM Model Prediction</b></TableCell>
+                                    <TableCell component="th" align="center"><b>Model Prediction</b></TableCell>
                                 </TableRow>
                                 </TableHead>
                                 <TableBody>
                                     <TableRow>
-                                        <TableCell align="center">{predictionData.xgb_model_prediction} ({predictionData.xgb_model_probability}%)</TableCell>
-                                        <TableCell align="center">{predictionData.rf_model_prediction} ({predictionData.rf_model_probability}%)</TableCell>
-                                        <TableCell align="center">{predictionData.svm_model_prediction} ({predictionData.svm_model_probability}%)</TableCell>
+                                        <TableCell align="center">{predictionData.fert_model_prediction} ({predictionData.fert_model_probability}%)</TableCell>
                                     </TableRow>
                                 </TableBody>
                             </Table>

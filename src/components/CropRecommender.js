@@ -110,16 +110,12 @@ function CropRecommender() {
                             <Table className={classes.table} aria-label="simple table">
                                 <TableHead>
                                 <TableRow>
-                                    <TableCell component="th" align="center"><b>XGBoost Model Prediction</b></TableCell>
-                                    <TableCell component="th" align="center"><b>RandomForest Model Prediction</b></TableCell>
-                                    <TableCell component="th" align="center"><b>KNN Model Prediction</b></TableCell>
+                                    <TableCell component="th" align="center"><b>Model Prediction</b></TableCell>
                                 </TableRow>
                                 </TableHead>
                                 <TableBody>
                                     <TableRow>
-                                        <TableCell align="center">{predictionData.xgb_model_prediction} ({predictionData.xgb_model_probability}%)</TableCell>
-                                        <TableCell align="center">{predictionData.rf_model_prediction} ({predictionData.rf_model_probability}%)</TableCell>
-                                        <TableCell align="center">{predictionData.knn_model_prediction} ({predictionData.knn_model_probability}%)</TableCell>
+                                        <TableCell align="center">{predictionData.crop_model_prediction} ({predictionData.crop_model_probability}%)</TableCell>
                                     </TableRow>
                                 </TableBody>
                             </Table>
