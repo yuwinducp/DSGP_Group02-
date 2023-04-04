@@ -1,0 +1,42 @@
+.banner {
+  height: 90vh;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.banner__title_head {
+  text-align: center;
+  font-weight: 600;
+  font-size: 80px;
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid whitesmoke;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.banner__title_head font {
+  color: rgb(11, 143, 8);
+}
+
+.banner__title_tail {
+  text-align: center;
+  margin-top: 10px;
+  color: azure;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.banner1_logo_image {
+  width: 75px !important;
+  height: 75px !important;
+  margin-bottom: -28px !important;
+}
+
+
