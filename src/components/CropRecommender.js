@@ -67,7 +67,7 @@ function CropRecommender() {
                     <TextField onChange={(e) => handleChange(e)} value={formData.ph} className="form__text_field" id="ph" name="ph" variant="filled" label="pH value of Soil" type="number"/>
                     <TextField onChange={(e) => handleChange(e)} value={formData.rainfall} className="form__text_field" id="rainfall" name="rainfall" variant="filled" label="Rainfall (in mm)" type="number"/>
 
-                    <Button onClick={()=>handleClick()} className="form__button" color="primary" variant="contained">Predict Crop</Button>
+                    <Button onClick={()=>handleClick()} className="form__button" style={{backgroundColor: '#077329'}} color="primary" variant="contained">Predict Crop</Button>
                 </div>
             </div>
         </div>

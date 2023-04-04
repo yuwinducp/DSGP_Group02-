@@ -177,6 +177,7 @@ function FertilizerRecommender() {
           <Button
             onClick={() => handleClick()}
             className="form__button"
+            style={{backgroundColor: '#077329'}}
             color="primary"
             variant="contained"
           >

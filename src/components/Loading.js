@@ -3,10 +3,12 @@ import "../styles/Loading.css"
 
 function Loading() {
     return (
-        <div style={{marginTop:'10rem'}}>
-            <center>
-                <img className="loading_image" src={`${process.env.PUBLIC_URL + '/assets/loading.gif'}`} alt="Loading" />
-            </center>
+        <div style={{backgroundImage:`url(${process.env.PUBLIC_URL + 'assets/CropRecomender.jpg'})`}} className="container">
+            <div style={{marginTop:'10rem'}}>
+                <center>
+                    <img className="loading_image" src={`${process.env.PUBLIC_URL + '/assets/loading.gif'}`} alt="Loading" />
+                </center>
+            </div>
         </div>
     )
 }
